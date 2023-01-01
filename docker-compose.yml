@@ -1,0 +1,11 @@
+version:  '3'
+services:
+  qiushao-redis-web-manager:
+      image: qiushaocloud/redis-web-manager
+      container_name: qiushao-redis-web-manager
+      hostname: qiushao-redis-web-manager
+      ports:
+        - 9898:80
+      volumes:
+        - $RDM_DATA_DIR:/data
+        - $MYSQL_DIR:/var/lib/mysql
