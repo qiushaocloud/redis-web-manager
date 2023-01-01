@@ -5,7 +5,7 @@ services:
       container_name: qiushao-redis-web-manager
       hostname: qiushao-redis-web-manager
       ports:
-        - EXTERNAL_SVC_PORT:$SERVER_PORT
+        - $EXTERNAL_SVC_PORT:$SERVER_PORT
       volumes:
         - $RDM_DATA_DIR:/data
         - $MYSQL_DIR:/var/lib/mysql
