@@ -1,0 +1,14 @@
+/.idea
+.DS_Store
+.env
+.env.swp
+application.yml
+application.yml.swp
+change_root_pwd.sql
+change_root_pwd.sql.swp
+.env
+.env.swp
+create_db.sql
+create_db.sql.swp
+check_is_exist_db.sql
+check_is_exist_db.sql.swp
