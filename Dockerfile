@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ "Asia/Shanghai"
-ENV SERVER_PORT 80
+ENV SERVER_PORT 8989
 ENV DATASOURCE_DATABASE redis_manager
 ENV DATASOURCE_ADDR localhost:3306
 ENV DATASOURCE_USERNAME root
@@ -45,6 +45,7 @@ RUN sed -i "s/^bind 127.0.0.1/#bind 127.0.0.1/" /etc/redis/redis.conf \
 ### 可以映射的目录
 #VOLUME ["/var/lib/mysql", "/data"]
 
+EXPOSE 8989
 WORKDIR /app
 
 CMD ["/app/bootstrap.sh"]
