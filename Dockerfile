@@ -33,7 +33,8 @@ RUN chmod 777 /app/bootstrap.sh \
     && rm -rf /app/redis-manager/conf/application.yml \
     && rm -rf /app/mysql/change_root_pwd.sql \
     && rm -rf /app/mysql/check_is_exist_db.sql \
-    && rm -rf /app/mysql/create_db.sql
+    && rm -rf /app/mysql/create_db.sql \
+    && echo "set encoding=utf-8" >> /root/.vimrc
 
 RUN mv /var/lib/mysql /var/lib/mysql.bak
 
