@@ -15,8 +15,8 @@ ENV RM_AUTH_SITE_KEY define_site_key
 ENV RM_AUTH_SITE_SECRET define_site_secret
 ENV CURRENT_HOST ''
 
-RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
-COPY ./others/sources.list /etc/apt/sources.list
+# RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
+# COPY ./others/sources.list /etc/apt/sources.list
 
 RUN apt update
 # RUN apt install -y sudo 
