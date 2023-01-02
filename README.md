@@ -17,10 +17,10 @@
 1.  执行命令授予执行脚本权限：`sed -i -e 's/\r$//' *.sh && chmod -R 755 *.sh`
 2.  执行 `copy env.tpl .env`，并且配置 .env
 3.  运行 ./run-docker.sh 【注：docker-compose 低版本识别不了 .env，需要进行升级，作者用的版本是: 1.29.2】
-5.  查看日志: docker logs qiushao-redis-web-manager
+4.  查看日志: docker logs qiushao-redis-web-manager
 
 
-### Docker容器启动
+### Docker容器启动【原作者】
 
 [Dockerhub](https://hub.docker.com/repository/docker/reasonduan/redis-manager)
 
@@ -44,26 +44,26 @@ Redis Manager 钉钉交流群
 
 云栖社区 https://yq.aliyun.com/album/227?spm=a2c4e.11155435.0.0.3ece24f0lQw15C
 
-### 产品主要功能介绍
-#### Dashboard
+### 产品主要功能介绍【原作者】
+#### Dashboard【原作者】
 
 > 展示当前用户组监控的所有集群
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/index_6GoZ7Z.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/index.png)
 
-#### 集群导入
+#### 集群导入【原作者】
 
 > 导入已存在集群
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/import-cluster_XgqWvC.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/import-cluster.png)
 
-#### 集群监控
+#### 集群监控【原作者】
 
 > 监控 Memory、Clients 等 Redis 重要指标; 查询 Slow Log
 
 [![img](https://github.com/ngbdf/redis-manager/raw/master/documents/images/monitor.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/monitor.png)
 
-#### 集群管理
+#### 集群管理【原作者】
 
 > 支持节点Forget、Replicate Of、Failover、Move Slot、Start、Stop、Restart、Delete、修改配置等功能
 
@@ -73,7 +73,7 @@ Redis Manager 钉钉交流群
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/edit-config_wJ714k.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/edit-config.png)
 
-#### 集群告警
+#### 集群告警【原作者】
 
 > 支持邮件、企业微信APP、企业微信Webhook、钉钉告警
 
@@ -81,27 +81,27 @@ Redis Manager 钉钉交流群
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/cluster-channel_hu9jTR.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/alert-manage/cluster-channel.png)
 
-#### 数据操作
+#### 数据操作【原作者】
 
 > 支持简单的数据操作
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/data-operation_RhS1Oy.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/data-operation.png)
 
-#### 创建集群
+#### 创建集群【原作者】
 
 > 目前支持 Redis Cluster、Standalone 模式的创建，包括机器安装、Docker 安装和 Humpback 安装方式
 
 [![img](https://github.com/ngbdf/redis-manager/raw/master/documents/images/installation/cluster-docker-auto.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/installation/cluster-docker-auto.png)
 
-#### 用户组管理
+#### 用户组管理【原作者】
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/group-manage_HOfqPL.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/group-manage.png)
 
-#### 用户管理
+#### 用户管理【原作者】
 
 [![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/user-manage_4Vm8v3.png)](https://github.com/ngbdf/redis-manager/blob/master/documents/images/user-manage/user-manage.png)
 
-#### 用户手册
+#### 用户手册【原作者】
 
 > 用户手册主要介绍如何使用 Redis Manager
 
@@ -116,7 +116,7 @@ Redis Manager 钉钉交流群
 * [组和用户](https://github.com/ngbdf/redis-manager/wiki/2.x-组和用户管理)
 
 
-### License
+### License【原作者】
 RedisManager is Open Source software released under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 
