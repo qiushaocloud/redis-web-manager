@@ -18,6 +18,19 @@
 2.  执行 `copy env.tpl .env`，并且配置 .env
 3.  运行 ./run-docker.sh 【注：docker-compose 低版本识别不了 .env，需要进行升级，作者用的版本是: 1.29.2】
 4.  查看日志: docker logs qiushao-redis-web-manager
+5.  默认密码如下:
+```
+    web admin >
+        username: admin
+        password: rmpassword
+
+    mysql >
+        username: root
+        password: rootmysqlpassword
+
+    test redis >
+        password: redispassword
+```
 
 ### 测试地址：https://www.qiushaocloud.top/redis-web-manager/
 > 温馨提示：请您测试的时候不要修改这两个账号的密码哦，您可以用 admin 账号创建一个属于您的 admin/普通 账号进行测试

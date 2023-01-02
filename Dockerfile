@@ -6,9 +6,9 @@ ENV SERVER_PORT 8989
 ENV DATASOURCE_DATABASE redis_manager
 ENV DATASOURCE_ADDR localhost:3306
 ENV DATASOURCE_USERNAME root
-ENV DATASOURCE_PASSWORD password
+ENV DATASOURCE_PASSWORD rootmysqlpassword
 ENV RM_AUTH_USERNAME admin
-ENV RM_AUTH_PASSWORD password
+ENV RM_AUTH_PASSWORD rmpassword
 ENV RM_AUTH_COMPANY_NAME define_company_name
 ENV RM_AUTH_SERVER define_server
 ENV RM_AUTH_SITE_KEY define_site_key
@@ -40,6 +40,7 @@ RUN mv /var/lib/mysql /var/lib/mysql.bak
 
 RUN sed -i "s/^bind 127.0.0.1/#bind 127.0.0.1/" /etc/redis/redis.conf \
     && sed -i "s/^protected-mode yes/protected-mode no/" /etc/redis/redis.conf \
+    && sed -i "s/^# requirepass foobared/requirepass rootredispassword/" /etc/redis/redis.conf \
     && sed -i "s/bind-address/bind-address = 0.0.0.0 #/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
 ### 可以映射的目录
