@@ -17,12 +17,12 @@ ENV CURRENT_HOST ''
 
 RUN apt update
 # RUN apt install -y sudo 
-RUN sudo apt install -y apt-utils
-RUN sudo apt install -y procps lsof net-tools lsb-release curl wget lrzsz iputils-ping
-# RUN sudo apt install -y vim
-RUN sudo apt install -y mysql-server --fix-missing --fix-broken
-RUN sudo apt install -y openjdk-8-jre-headless
-RUN sudo apt install -y redis-server
+RUN apt install -y apt-utils
+RUN apt install -y procps lsof net-tools lsb-release curl wget lrzsz iputils-ping
+# RUN apt install -y vim
+RUN apt install -y mysql-server --fix-missing --fix-broken
+RUN apt install -y openjdk-8-jre-headless
+RUN apt install -y redis-server
 
 COPY ./redis-manager /app/redis-manager
 COPY ./bootstrap.sh /app/bootstrap.sh
