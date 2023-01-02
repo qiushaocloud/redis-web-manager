@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TZ "Asia/Shanghai"
 ENV SERVER_PORT 80
 ENV DATASOURCE_DATABASE redis_manager
-ENV DATASOURCE_URL jdbc:mysql://localhost:3306/redis_manager?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
+ENV DATASOURCE_URL jdbc:mysql:\/\/localhost:3306\/redis_manager?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8
 ENV DATASOURCE_USERNAME root
 ENV DATASOURCE_PASSWORD password
 ENV RM_AUTH_USERNAME admin
