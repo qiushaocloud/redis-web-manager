@@ -19,6 +19,10 @@
 3.  运行 ./run-docker.sh 【注：docker-compose 低版本识别不了 .env，需要进行升级，作者用的版本是: 1.29.2】
 4.  查看日志: docker logs qiushao-redis-web-manager
 
+### 测试地址：https://www.qiushaocloud.top/redis-web-manager/
+* 超级管理员：账号不提供 密码: 不提供
+* 管理员：admin(账号) admin(密码)
+* 普通成员：test(账号) test(密码)
 
 ### Docker容器启动【原作者】
 
