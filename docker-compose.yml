@@ -9,4 +9,5 @@ services:
       volumes:
         - $RDM_DATA_DIR:/data
         - $MYSQL_DIR/var_lib_mysql:/var/lib/mysql
+        - $TEST_REDIS_DIR/var_lib_redis:/var/lib/redis
       env_file: .env
