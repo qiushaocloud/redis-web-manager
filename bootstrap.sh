@@ -7,14 +7,14 @@ cd /app/redis-manager/conf
 ./init_application_yml.sh
 echo "finsh init application yml"
 
+echo "start redis service"
+service redis-server start
+echo "finsh redis service"
+
 echo "start mysql service"
 cd /app/mysql
 ./init_mysql.sh
 echo "finsh mysql service"
-
-echo "start redis service"
-service redis-server start
-echo "finsh redis service"
 
 sleep 5
 
