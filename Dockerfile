@@ -44,4 +44,6 @@ RUN sed -i "s/^bind 127.0.0.1/bind 0.0.0.0 #/" /etc/redis/redis.conf \
 ### 可以映射的目录
 #VOLUME ["/var/lib/mysql", "/data"]
 
+WORKDIR /app
+
 CMD ["/app/bootstrap.sh"]
