@@ -6,7 +6,7 @@ if [ ! -f "application.yml" ]; then
     cp application.yml.tpl application.yml
     sed -i "s/<SERVER_PORT>/$SERVER_PORT/" application.yml
     sed -i "s/<DATASOURCE_DATABASE>/$DATASOURCE_DATABASE/" application.yml
-    sed -i "s/<DATASOURCE_URL>/$DATASOURCE_URL/" application.yml
+    sed -i "s/<DATASOURCE_ADDR>/$DATASOURCE_ADDR/" application.yml
     sed -i "s/<DATASOURCE_USERNAME>/$DATASOURCE_USERNAME/" application.yml
     sed -i "s/<DATASOURCE_PASSWORD>/$DATASOURCE_PASSWORD/" application.yml
     sed -i "s/<RM_AUTH_USERNAME>/$RM_AUTH_USERNAME/" application.yml
