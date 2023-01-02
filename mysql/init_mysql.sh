@@ -9,6 +9,7 @@ if [ ! -f "/var/lib/mysql/mysql.ibd" ]; then
 fi
 echo 'rm -rf /var/lib/mysql.bak'
 rm -rf /var/lib/mysql.bak
+chown -R mysql:mysql /var/lib/mysql
 
 echo "start change root password"
 echo "DATASOURCE_PASSWORD:$DATASOURCE_PASSWORD"
