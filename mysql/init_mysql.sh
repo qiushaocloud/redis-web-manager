@@ -1,6 +1,15 @@
 #!/bin/bash
 echo "run init_mysql.sh"
 
+echo "check /var/lib/mysql/mysql.ibd"
+if [ ! -f "/var/lib/mysql/mysql.ibd" ]; then
+  echo "not exist /var/lib/mysql/mysql.ibd, need mv /var/lib/mysql.bak to /var/lib/mysql/"
+  mkdir -p /var/lib/mysql
+  mv /var/lib/mysql.bak/* /var/lib/mysql/
+fi
+echo 'rm -rf /var/lib/mysql.bak'
+rm -rf /var/lib/mysql.bak
+
 echo "start change root password"
 echo "DATASOURCE_PASSWORD:$DATASOURCE_PASSWORD"
 echo "DATASOURCE_DATABASE:$DATASOURCE_DATABASE"

@@ -34,6 +34,8 @@ RUN chmod 777 /app/bootstrap.sh \
     && rm -rf /app/mysql/check_is_exist_db.sql \
     && rm -rf /app/mysql/create_db.sql
 
+RUN mv /var/lib/mysql /var/lib/mysql.bak
+
 ### 可以映射的目录
 #VOLUME ["/var/lib/mysql", "/data"]
 
