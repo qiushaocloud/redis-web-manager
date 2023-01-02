@@ -17,7 +17,7 @@
 1. Execute the command to grant permission to execute the script: `sed -i -e 's/\r$//' *.sh && chmod -R 755 *.sh`
 2. Execute `copy env.tpl .env`, and configure .env
 3. Run ./run-docker.sh [Note: The lower version of docker-compose cannot recognize .env and needs to be upgraded. The version used by the author is: 1.29.2]
-5. Check the log: docker logs qiushao-redis-web-manager
+4. Check the log: docker logs qiushao-redis-web-manager
 
 
 ### Docker container start
