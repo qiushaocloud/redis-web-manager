@@ -24,6 +24,7 @@ sed -i "s/<DATASOURCE_DATABASE>/$DATASOURCE_DATABASE/g" create_db.sql
 
 echo "stop mysql service"
 service mysql stop
+bash stop_mysqld.sh
 sleep 5
 echo "start mysqld --skip-grant-tables"
 mysqld --skip-grant-tables &
@@ -41,6 +42,7 @@ mysql < change_root_pwd.sql
 
 echo "stop mysql service"
 service mysql stop
+bash stop_mysqld.sh
 sleep 5
 
 echo "start mysql service"
