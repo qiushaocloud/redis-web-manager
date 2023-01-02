@@ -12,6 +12,10 @@ cd /app/mysql
 ./init_mysql.sh
 echo "finsh mysql service"
 
+echo "start redis service"
+service redis-server start
+echo "finsh redis service"
+
 sleep 5
 
 echo "satrt redis-manager"

@@ -4,6 +4,7 @@ services:
       image: qiushaocloud/redis-web-manager
       container_name: qiushao-redis-web-manager
       hostname: qiushao-redis-web-manager
+      network_mode: $NETWORK_MODE
       ports:
         - $EXTERNAL_SVC_PORT:$SERVER_PORT
       volumes:
