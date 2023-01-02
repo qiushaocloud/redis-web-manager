@@ -16,10 +16,10 @@ ENV RM_AUTH_SITE_SECRET define_site_secret
 ENV CURRENT_HOST ''
 
 RUN apt update
-RUN apt install -y sudo 
+# RUN apt install -y sudo 
 RUN sudo apt install -y apt-utils
 RUN sudo apt install -y procps lsof net-tools lsb-release curl wget lrzsz iputils-ping
-RUN sudo apt install -y vim
+# RUN sudo apt install -y vim
 RUN sudo apt install -y mysql-server --fix-missing --fix-broken
 RUN sudo apt install -y openjdk-8-jre-headless
 RUN sudo apt install -y redis-server
