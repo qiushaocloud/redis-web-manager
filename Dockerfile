@@ -38,8 +38,8 @@ RUN chmod 777 /app/bootstrap.sh \
 
 RUN mv /var/lib/mysql /var/lib/mysql.bak
 
-RUN sed -i "s/^bind 127.0.0.1/bind 0.0.0.0 #/" /etc/redis/redis.conf \
-    && sed -i "s/bind-address/bind-address = 0.0.0.0 #/" /etc/mysql/mysql.conf.d/mysqld.cnf
+# RUN sed -i "s/^bind 127.0.0.1/bind 0.0.0.0 #/" /etc/redis/redis.conf \
+#     && sed -i "s/bind-address/bind-address = 0.0.0.0 #/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
 ### 可以映射的目录
 #VOLUME ["/var/lib/mysql", "/data"]
