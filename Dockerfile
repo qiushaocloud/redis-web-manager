@@ -15,17 +15,17 @@ ENV RM_AUTH_SITE_KEY define_site_key
 ENV RM_AUTH_SITE_SECRET define_site_secret
 ENV CURRENT_HOST ''
 
-# RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak
-# COPY ./others/sources.list /etc/apt/sources.list
+USER root
 
 RUN apt update
-# RUN apt install -y sudo 
 RUN apt install -y apt-utils
 RUN apt install -y procps lsof net-tools lsb-release curl wget lrzsz iputils-ping
-# RUN apt install -y vim
-RUN apt install -y mysql-server --fix-missing --fix-broken
 RUN apt install -y openjdk-8-jre-headless
 RUN apt install -y redis-server
+RUN apt-get -qq install --no-install-recommends  vim > /dev/null
+RUN apt-get -qq install -y mysql-server --fix-missing --fix-broken > /dev/null
+RUN mkdir -p /var/run/mysqld \
+    && chown mysql /var/run/mysqld/
 
 COPY ./redis-manager /app/redis-manager
 COPY ./bootstrap.sh /app/bootstrap.sh
