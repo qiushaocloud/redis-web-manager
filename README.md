@@ -38,29 +38,6 @@
 * 管理员：admin(账号) admin(密码)
 * 普通成员：test(账号) test(密码)
 
-### Docker容器启动【原作者】
-
-[Dockerhub](https://hub.docker.com/repository/docker/reasonduan/redis-manager)
-
-```
-$sudo docker run -d --net=host --name redis-manager  \
--e DATASOURCE_DATABASE='redis_manager' \
--e DATASOURCE_URL='jdbc:mysql://127.0.0.1:3306/redis_manager?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2b8' \
--e DATASOURCE_USERNAME='root' \
--e DATASOURCE_PASSWORD='******' \
-reasonduan/redis-manager
-```
-
-### 联系方式【原作者】
-> 您在使用产品的过程中如果遇到问题或者发现需要改进的地方可以通过以下方式直接联系我们或 Pull Request。
-
-Redis Manager 钉钉交流群
-
-[![img](https://githubcdn.qiushaocloud.top/gh/qiushaocloud-cdn/cdn_static@master/uPic/2023-01-02/13-50/dingding_3gVeXg.jpg)](https://github.com/ngbdf/redis-manager/blob/master/documents/contact/dingding.jpg)
-
-知乎专栏 https://zhuanlan.zhihu.com/c_1055846842708930560
-
-云栖社区 https://yq.aliyun.com/album/227?spm=a2c4e.11155435.0.0.3ece24f0lQw15C
 
 ### 产品主要功能介绍【原作者】
 #### Dashboard【原作者】
